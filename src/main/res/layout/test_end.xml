@@ -1,0 +1,151 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/header" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MainActivity"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:text="@string/accuracyRate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/table_header"
+            android:layout_marginLeft="5dp"
+            android:padding="5dp"
+            android:textIsSelectable="false" />
+
+        <TextView
+            android:id="@+id/accuracyRate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/table_data"
+            android:padding="5dp" />
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MainActivity"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:layout_marginRight="5dp">
+
+        <TextView
+            android:text="@string/wordOriginDetail2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/table_header"
+            android:layout_marginLeft="5dp"
+            android:padding="5dp"
+            android:textIsSelectable="false" />
+        <TextView
+            android:drawablePadding="5px"
+            android:drawableLeft="@drawable/word_origin_mini"
+            android:id="@+id/wordOrigin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/table_data"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="2dp" />
+    </LinearLayout>
+
+
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="2dp">
+            <ImageView
+                android:id="@+id/beforeData"
+                android:src="@drawable/before_data"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="left"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                android:layout_centerInParent="true"
+                android:layout_alignParentRight="true"
+                android:alpha="0.5"
+                android:paddingLeft="20dp" />
+
+            <ImageView
+                android:id="@+id/nextData"
+                android:src="@drawable/next_data"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="right"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                android:layout_centerInParent="true"
+                android:layout_alignParentRight="true"
+                android:alpha="0.5"
+                android:paddingRight="20dp" />
+
+    </FrameLayout>
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/testResultList"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:stretchColumns="2"
+            android:paddingTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:text="@string/no"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/table_header"
+                    android:padding="5dp"
+                    android:gravity="center_horizontal" />
+
+
+                <TextView
+                    android:text="@string/testResult"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/table_header"
+                    android:padding="5dp"
+                    android:gravity="center_horizontal" />
+
+                <TextView
+                    android:text="@string/word"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/table_header"
+                    android:padding="5dp"
+                    android:gravity="center_horizontal" />
+
+            </TableRow>
+
+
+        </TableLayout>
+    </ScrollView>
+</LinearLayout>

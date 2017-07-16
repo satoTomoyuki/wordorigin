@@ -1,0 +1,15 @@
+package com.example.wordorigin.util;
+
+
+import org.apache.commons.lang3.StringUtils;
+
+public class StringConvertUtil {
+
+    public static String convertBreak(String str) {
+        if(StringUtils.isBlank(str)){
+            return null;
+        }
+        return StringUtils.replace(str,"\n","。");
+    }
+
+}

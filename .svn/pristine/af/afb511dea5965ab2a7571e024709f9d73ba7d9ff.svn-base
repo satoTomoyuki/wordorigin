@@ -1,0 +1,33 @@
+package com.example.wordorigin.entity;
+
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
+import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
+import android.widget.ArrayAdapter;
+import android.widget.LinearLayout;
+import android.widget.ListView;
+
+import com.example.wordorigin.DataBaseHelper;
+import com.j256.ormlite.field.DatabaseField;
+import com.j256.ormlite.table.DatabaseTable;
+import lombok.Data;
+import lombok.Getter;
+
+@Data
+@DatabaseTable(tableName = "f01_word_origin")
+public class F01WordOrigin {
+
+    @DatabaseField(generatedId = true, columnName="word_origin_id")
+    private int wordOriginId;
+
+    @DatabaseField(columnName="word_origin_word")
+    private int wordOriginWord;
+
+    @DatabaseField(columnName="word_origin_translation")
+    private int wordOriginTranslation;
+
+    @DatabaseField(columnName="sequence")
+    private int sequence;
+
+}

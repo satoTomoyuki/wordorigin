@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">wordOrigin</string>
+    <string name="title">語源一覧</string>
+    <string name="action_settings">Settings</string>
+
+</resources>

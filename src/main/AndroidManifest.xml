@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wordOrigin">
+
+    <uses-sdk android:minSdkVersion="10"/>
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:name=".common.Globals">
+
+        <meta-data android:name="Adlantis_Publisher_ID" android:value="Mzg5NzI%3D%0A" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activity.WordOriginListActivity"
+            android:label="@string/app_name"></activity>
+
+        <activity
+            android:name=".activity.WordListActivity"
+            android:label="@string/app_name"></activity>
+
+        <activity
+            android:name=".activity.WordDetailActivity"
+            android:label="@string/app_name"></activity>
+
+        <activity
+            android:name=".activity.WordSearchActivity"
+            android:label="@string/app_name"></activity>
+
+        <activity
+            android:name=".activity.TestTopActivity"
+            android:label="@string/app_name"></activity>
+
+        <activity
+            android:name=".activity.TestMainActivity"
+            android:label="@string/app_name"></activity>
+
+        <activity
+            android:name=".activity.TestEndActivity"
+            android:label="@string/app_name"></activity>
+
+        <activity
+            android:name=".activity.SettingActivity"
+            android:label="@string/app_name"></activity>
+
+        <activity
+            android:name=".activity.TemporaryStopActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.DimPanel"></activity>
+
+    </application>
+
+</manifest>

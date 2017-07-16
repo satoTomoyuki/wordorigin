@@ -1,0 +1,13 @@
+package com.example.wordorigin.constant;
+
+/**
+ * Created by 智之 on 2015/01/27.
+ */
+public class WordOriginConst {
+
+    // privateコンストラクタでインスタンス生成を抑止
+    private WordOriginConst(){}
+
+    // 定数
+    public static final String INTENT_KEY_WORD_ORIGIN_ID = "WORD_ORIGIN_ID";
+}

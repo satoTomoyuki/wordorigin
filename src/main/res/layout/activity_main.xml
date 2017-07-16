@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@color/black">
+
+    <TextView
+        android:text="@string/titleHome"
+        android:id="@+id/titleCell"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:background="@color/title"
+        android:gravity="center_vertical|center_horizontal"
+        android:password="false"
+        android:paddingBottom="0dp" />
+
+    <TextView
+        android:drawableLeft="@drawable/test"
+        android:id="@+id/testCell"
+        android:text="@string/titleTest"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textColor="@color/black"
+        android:background="@drawable/color_stateful"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="5dp" />
+
+    <TextView
+        android:drawableLeft="@drawable/word_origin"
+        android:id="@+id/wordOriginCell"
+        android:text="@string/titleList"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textColor="@color/black"
+        android:background="@drawable/color_stateful"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp" />
+
+    <TextView
+        android:drawableLeft="@drawable/word_search"
+        android:id="@+id/wordSearchCell"
+        android:text="@string/titleSearch"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textColor="@color/black"
+        android:background="@drawable/color_stateful"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp" />
+
+    <TextView
+        android:drawableLeft="@drawable/setting"
+        android:id="@+id/settingCell"
+        android:text="@string/titleSetting"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textColor="@color/black"
+        android:background="@drawable/color_stateful"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="15dp" />
+</LinearLayout>

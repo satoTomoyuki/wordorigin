@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/header" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchWord"
+        android:maxLength="20"
+        android:background="@drawable/border"
+        android:inputType="text"
+        android:hint="英単語を入力"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:id="@+id/searchTitle"
+        android:text="@string/searchResult"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/itemHeader"
+        android:padding="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_margin="5dp" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchWordList"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:fastScrollEnabled="true"
+        android:fastScrollAlwaysVisible="true"
+        android:stackFromBottom="false"
+        android:layout_marginLeft="5dp" />
+</LinearLayout>

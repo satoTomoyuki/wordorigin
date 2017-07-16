@@ -1,0 +1,21 @@
+package com.example.wordorigin.enums;
+
+public enum Color {
+
+	COLOR_RED("red"),
+    COLOR_BLUE("blue"),
+    COLOR_ORANGE("orange"),
+    COLOR_DARK_GREEN("darkgreen"),
+    COLOR_MAGENTA("magenta"),
+    COLOR_DARK_CYAN("darkcyan");
+
+	private String color;
+
+	private Color(final String color) {
+		this.color = color;
+	}
+
+	public String getColor() {
+		return this.color;
+	}
+}

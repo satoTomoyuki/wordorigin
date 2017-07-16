@@ -1,0 +1,29 @@
+package com.example.wordorigin.constant;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+/**
+ * Created by 智之 on 2015/01/27.
+ */
+public class WordOriginConst {
+
+    // privateコンストラクタでインスタンス生成を抑止
+    private WordOriginConst(){}
+
+    // 定数
+    public static final String INTENT_KEY_WORD_ORIGIN_ID = "WORD_ORIGIN_ID";
+
+    public static final List<String> COLOR_LIST;
+    static {
+        List<String> list = new ArrayList<String>();
+        list.add("red");
+        list.add("blue");
+        list.add("#228b22");  //forestgreen
+        list.add("#ff8c00");  //	darkorange
+        list.add("magenta");
+        list.add("#8a2be2");  //blueviolet
+        COLOR_LIST = Collections.unmodifiableList(list);
+    }
+}

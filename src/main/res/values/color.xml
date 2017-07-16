@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#ffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="title">#b0e0e6</color>
+    <color name="itemHeader">#e0ffff</color>
+    <color name="itemData">#dcdcdc</color>
+    <color name="sub">#a9a9a9</color>
+    <color name="orange">#ffa500</color>
+    <color name="defaultButtonColor">#d3d3d3</color>
+
+</resources>

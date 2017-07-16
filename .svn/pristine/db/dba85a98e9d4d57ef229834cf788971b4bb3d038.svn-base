@@ -1,0 +1,61 @@
+package com.example.wordorigin;
+
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
+import android.support.v7.app.ActionBarActivity;
+import android.os.Bundle;
+import android.widget.ArrayAdapter;
+import android.widget.LinearLayout;
+import android.widget.ListView;
+
+import java.io.File;
+
+
+public class MainActivity extends ActionBarActivity {
+    ListView varListView;
+
+    private DataBaseHelper mDbHelper;
+    private SQLiteDatabase db;
+
+
+    public void onCreate(Bundle savedInstanceState)
+    {
+        super.onCreate(savedInstanceState);
+        LinearLayout varLinearLayout = new LinearLayout(this);
+        varLinearLayout.setOrientation(LinearLayout.HORIZONTAL);
+        setContentView(varLinearLayout);
+
+        ListView varListView = new ListView(this);
+
+        mDbHelper = new DataBaseHelper(this);
+        db = mDbHelper.getWritableDatabase();
+
+        // 検索を行うSQL文の登録dd
+        String query = "SELECT * FROM f01_word_origin WHERE word_origin_id >= 10";
+
+        Cursor cursor = db.rawQuery(query, null);
+
+        // ③ArrayAdapterのインスタンスを生成
+        ArrayAdapter<String> ad = new ArrayAdapter<String>(
+                this, android.R.layout.simple_list_item_1);
+        while(cursor.moveToNext())
+        {
+
+            int wordOriginId = cursor.getInt(cursor.getColumnIndex("word_origin_id"));
+            String wordOriginWord = cursor.getString(cursor.getColumnIndex("word_origin_word"));
+
+
+            String row = "No." + wordOriginId + " 英単語:" + wordOriginWord;
+
+            ad.add(row);
+        }
+
+        varListView.setAdapter(ad);
+
+        varLinearLayout.addView(varListView);
+
+        // データベースオブジェクトをクローズ
+        db.close();
+    }
+}
+

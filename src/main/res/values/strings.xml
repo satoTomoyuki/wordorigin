@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">語源で英単語</string>
+
+    <!-- タイトル(トップ画面) -->
+    <string name="titleHome">語源で覚える英単語 4700語</string>
+    <string name="titleTest">語源テスト</string>
+    <string name="titleList">語源一覧</string>
+    <string name="titleSearch">単語検索</string>
+    <string name="titleSetting">設定</string>
+
+    <!-- タイトル(サブ画面) -->
+    <string name="titleTestResult">テスト結果</string>
+    <string name="titleWordOriginDetail">語源詳細</string>
+    <string name="titleWordDetail">単語詳細</string>
+
+    <string name="wordOriginForList"> 【語源】</string>
+    <string name="associationForList"> 【連想】</string>
+    <string name="translationForList"> 【意味】</string>
+
+    <string name="group">グループ</string>
+    <string name="no">No.</string>
+    <string name="svl">レベル</string>
+    <string name="word">単語</string>
+    <string name="pronunciation">カタカナ</string>
+    <string name="wordOriginDetail">語源</string>
+    <string name="wordOriginDetail2">語源　</string>
+    <string name="association">連想</string>
+    <string name="translation">意味</string>
+    <string name="remark">備考</string>
+    <string name="accuracyRate">正解率</string>
+
+    <string name="searchHint">英単語を入力してください</string>
+    <string name="searchWord">searchWord</string>
+    <string name="searchResult">検索結果</string>
+
+    <string name="achievementRate">【達成度】</string>
+    <string name="achievementRateAll">全体 達成度</string>
+    <string name="lastTestTime">【前回実施日】</string>
+    <string name="unclear">分からない</string>
+    <string name="testResult">結果</string>
+
+    <!-- 設定画面 -->
+    <string name="dataManagement">データ管理</string>
+    <string name="testHistoryDelete">試験実施履歴をクリア</string>
+    <string name="systemManagement">システム管理</string>
+    <string name="information">情報</string>
+
+    <string name="completeWordOrigin">完了した語源</string>
+    <string name="display">表示</string>
+    <string name="hide">非表示</string>
+
+    <string name="publisherID">Mzg5NzI%3D%0A</string>
+</resources>
